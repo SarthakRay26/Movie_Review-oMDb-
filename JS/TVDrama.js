@@ -156,7 +156,7 @@ function openModal(dramaName) {
     modalDescription.appendChild(castParagraph);
   }
 
-  if (dramaName === "suits") {
+  if (dramaName === "Suits") {
     var description =
       "On the run from a drug deal gone bad, brilliant college dropout Mike Ross finds himself working with Harvey Specter, one of New York City's best lawyers.";
     var cast =
