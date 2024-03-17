@@ -1,107 +1,102 @@
 function handleGenreChange(genre) {
-    switch (genre) {
-      case "action":
-        handleAction();
-        break;
-      
-      case "comedy":
-        handleComedy();
-        
-        break;
-      case "drama":
-        handleDrama();
-        
-        break;
-      case "fantasy":
-        handleFantasy();
-        
-        break;
-      case "horror":
-        handleHorror();
-        
-        break;
-      
-        
-      case "romance":
-        handleRomance();
-        
-        break;
-      case "sci-fi":
-        handleSciFi();
-        
-        break;
-      
+  switch (genre) {
+    case "action":
+      handleAction();
+      break;
 
-      default:
-        console.log("Unknown genre: " + genre);
-    }
-  }
+    case "comedy":
+      handleComedy();
 
-  function handleAction() {
-    
-    const container = document.getElementById("result");
-    container.innerHTML = ""; 
-    for (let i = 0; i < 8; i++) {
-      const tile = document.createElement("div");
-      tile.style.width = "100px";
-      tile.style.height = "100px";
-      tile.style.border = "1px solid black";
-      tile.style.margin = "10px";
-      tile.textContent = `Adventure ${i + 1}`;
-      container.appendChild(tile);
-    }
+      break;
+    case "drama":
+      handleDrama();
+
+      break;
+    case "fantasy":
+      handleFantasy();
+
+      break;
+    case "horror":
+      handleHorror();
+
+      break;
+
+
+    case "romance":
+      handleRomance();
+
+      break;
+    case "sci-fi":
+      handleSciFi();
+
+      break;
+
+
+    default:
+      console.log("Unknown genre: " + genre);
   }
+}
+
+function handleAction() {
+
+  const container = document.getElementById("result");
+  container.innerHTML = "";
+  for (let i = 0; i < 8; i++) {
+    const tile = document.createElement("div");
+    tile.style.width = "100px";
+    tile.style.height = "100px";
+    tile.style.border = "1px solid black";
+    tile.style.margin = "10px";
+    tile.textContent = `Adventure ${i + 1}`;
+    container.appendChild(tile);
+  }
+}
 
 function createTiles(genre) {
-const container = document.getElementById("result");
-container.innerHTML = ""; 
-for (let i = 0; i < 10; i++) {
-  const tile = document.createElement("div");
-  tile.className = "tile";
+  const container = document.getElementById("result");
+  container.innerHTML = "";
+  for (let i = 0; i < 10; i++) {
+    const tile = document.createElement("div");
+    tile.className = "tile";
 
-  const image = document.createElement("img");
-  image.src = `./${genre}/${genre}${i}.jpg`; 
-  image.style.width = "100%";
-  image.style.height = "auto";
+    const image = document.createElement("img");
+    image.src = `./${genre}/${genre}${i}.jpg`;
+    image.style.width = "100%";
+    image.style.height = "auto";
 
-  tile.appendChild(image);
-  container.appendChild(tile);
-}
-}
-
-function handleAction() 
-{
-    createTiles('action');
+    tile.appendChild(image);
+    container.appendChild(tile);
+  }
 }
 
-function handleComedy() 
-{
-    createTiles('comedy');
+
+function handleAction() {
+  createTiles('action');
 }
 
-function handleDrama() 
-{
-    createTiles('drama');
+function handleComedy() {
+  createTiles('comedy');
 }
 
-function handleFantasy() 
-{ 
-    createTiles('fantasy');
+function handleDrama() {
+  createTiles('drama');
 }
 
-function handleHorror() 
-{   
-    createTiles('horror');
+function handleFantasy() {
+  createTiles('fantasy');
 }
 
-function handleRomance() 
-{
-    createTiles('romance');
+function handleHorror() {
+  createTiles('horror');
+}
+
+function handleRomance() {
+  createTiles('romance');
 }
 
 function handleSciFi() {
-    
-    createTiles('sci-fi');
+
+  createTiles('sci-fi');
 }
 
 

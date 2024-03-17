@@ -3,20 +3,16 @@ body {
     color: antiquewhite;
 
 }
-
-
 .feature-icon {
     width: 4rem;
     height: 4rem;
     border-radius: 0.75rem;
 }
-
 .feature-icon {
     width: 4rem;
     height: 4rem;
     border-radius: 0.75rem;
 }
-
 /* Custom styles for modal */
 .modal-content {
     background-color: black;
@@ -51,18 +47,14 @@ body {
 .navbar-collapse {
     background-color: #FDB750;
 }
-
-
 .navbar-brand {
     display: flex;
     align-items: center;
 }
-
 .navbar-brand img {
     margin-right: 5px;
     /* Adjust as needed */
 }
-
 /* Add your custom styles here */
 #carouselExampleIndicators {
     width: 70%;
@@ -72,27 +64,20 @@ body {
     /* Adjust the margin-top as needed for centering */
     margin: 25px;
 }
-
 .carousel-inner img {
     width: 100%;
     height: 525px;
     /* Adjust this value as needed */
     object-fit: contain;
 }
-
 .carousel-indicators {
     margin-bottom: 10px;
     position: absolute;
-
-
 }
-
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
 }
-
-
 table td {
     vertical-align: top;
 }
@@ -103,7 +88,6 @@ input::placeholder {
     text-align: left;
 
 }
-
 .search-element {
     margin-right: 10px;
 }
@@ -132,15 +116,12 @@ button[type="submit"] {
     align-items: center;
     justify-content: center;
 }
-
 .bg-body-tertiary {
     background-color: #FDB750 !important;
 }
-
 table a {
     color: white;
 }
-
 /* When touched, should also remain white */
 table a:active,
 table a:focus,
@@ -148,31 +129,30 @@ table a:hover {
     color: white;
     text-decoration: underline;
 }
-
 .video-carousel-container {
     position: relative;
     /* Position relative for absolute positioning of arrows */
-    width: 100%;
+    width: 96%;
     overflow: hidden;
     /* Hide overflowing content */
-    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
     /* Center the container */
-    max-width: 800px;
-    /* Adjust as needed */
 }
 
 .video-container {
     display: flex;
-    width: 400px;
+    width: 100vw;
+    /* Full width of the viewport */
     height: 300px;
-    /* Allows the container to adjust its width based on content */
+    /* Height of the video container, adjust as needed */
     transition: transform 0.3s ease;
-    /* Smooth transition for sliding effect */
 }
 
 .video-container video {
     width: 100%;
     max-width: 100%;
+    /* Ensure videos take up full width */
 }
 
 .prev,
@@ -190,11 +170,17 @@ table a:hover {
 .prev {
     left: 0;
 }
-
 .next {
     right: 0;
 }
+.h1 {
+    margin-left: 25px;
+}
+footer{
+    margin-right:0px;
+    width:100%;
+}
 
-h1{
-    margin-left:25px;
+.genre{
+    margin:25px;
 }
