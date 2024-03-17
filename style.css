@@ -41,15 +41,15 @@ body {
 }
 
 .navbar {
-    background-color: gray;
+    background-color: #FDB750;
 }
 
 .navbar-toggler {
-    background-color: gray;
+    background-color: #FDB750;
 }
 
 .navbar-collapse {
-    background-color: gray;
+    background-color: #FDB750;
 }
 
 
@@ -134,7 +134,7 @@ button[type="submit"] {
 }
 
 .bg-body-tertiary {
-    background-color: gray !important;
+    background-color: #FDB750 !important;
 }
 
 table a {
@@ -163,7 +163,8 @@ table a:hover {
 
 .video-container {
     display: flex;
-    width: max-content;
+    width: 400px;
+    height: 300px;
     /* Allows the container to adjust its width based on content */
     transition: transform 0.3s ease;
     /* Smooth transition for sliding effect */
