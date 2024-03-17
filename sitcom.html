@@ -4,204 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best 20 Sitcoms of All Time</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tvsitcom.css">
 </head>
 
-<script>
-    // Function to open the modal with sitcom details
-    function openModal(sitcomName) {
-        var modal = document.getElementById("modal");
-        var modalTitle = document.getElementById("modal-title");
-        var modalDescription = document.getElementById("modal-description");
-
-        // Set title and description based on the sitcomName
-        if (sitcomName === 'friends') {
-            modalTitle.textContent = "Friends";
-            modalDescription.textContent = "An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.";
-            // Additional details for Friends if needed
-        }
-        
-        modal.style.display = "block";
-    }
-
-    // Function to close the modal
-    function closeModal() {
-        var modal = document.getElementById("modal");
-        modal.style.display = "none";
-    }
-</script>
-
-<style>
-
-    /* CSS for the modal */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0; /* Set background color */
-    }
 
-    header {
-        background-color: #ff6f61; /* Set header background color */
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    main {
-        padding: 20px;
-    }
-
-    .sitcom {
-        margin-bottom: 20px;
-        background-color: #fff; /* Set sitcom tile background color */
-        padding: 20px;
-        border-radius: 5px;
-        width: calc(25% - 40px); /* Make the tiles take up 25% of the width of the container, minus the margin */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        transition: transform 0.3s ease; /* Add a transition for the transform property */
-    }
-
-    .sitcom:hover {
-        transform: scale(1.05); /* Scale the tile up to 105% when hovered over */
-    }
-
-    main {
-        display: flex; /* Use flexbox layout */
-        flex-wrap: wrap; /* Allow the tiles to wrap onto the next line */
-        justify-content: space-between; /* Add space between the tiles */
-    }
-
-    .sitcom h2 {
-        margin-top: 0;
-    }
-
-    .sitcom p {
-        margin-bottom: 0;
-    }
-
-</style>
 <body>
     <header>
         <h1>Best Sitcoms of All Time</h1>
     </header>
     <main>
         <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
+            <h2>Friends</h2>
             <img src="./sitcoms/friends.jpg" alt="Friends" width="200px" height="300px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+            <p><span><b>Rating: </b></span> 8.9 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>1994-2004 </p>
+
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('himym')">
+            <h2>How I Met Your Mother</h2>
+            <img src="./sitcoms/himym.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.3 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2005-2014 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('tbbt')">
+            <h2>The Big Bang Theory</h2>
+            <img src="./sitcoms/tbbt.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.1 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2007-2019 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('office')">
+            <h2>The Office</h2>
+            <img src="./sitcoms/office.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.9 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2005-2013 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('b99')">
+            <h2>Brooklyn Nine-Nine</h2>
+            <img src="./sitcoms/b99.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.4 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2013-2021 </p>
+
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('twoandahalf')">
+            <h2>Two anda Half Men</h2>
+            <img src="./sitcoms/two.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 7.0 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2003-2015 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('that70')">
+            <h2>That 70's Show</h2>
+            <img src="./sitcoms/that70.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.1 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>1998-2006 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('sexedu')">
+            <h2>Sex Education</h2>
+            <img src="./sitcoms/sexed.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.3 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2019-2021 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('seinfeld')">
+            <h2>Seinfeld</h2>
+            <img src="./sitcoms/seinfeld.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.8 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>1989-1998 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('raymond')">
+            <h2>Everybody Loves Raymond</h2>
+            <img src="./sitcoms/raymond.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 7.1 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>1996-2005 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('modernfam')">
+            <h2>Modern Family</h2>
+            <img src="./sitcoms/modernfamily.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.4 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2009-2020 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('community')">
+            <h2>Community</h2>
+            <img src="./sitcoms/community.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.5 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2009-2015 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('cheers')">
+            <h2>Cheers</h2>
+            <img src="./sitcoms/cheers.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 7.8 <span><img src="./star.svg" alt="" height="15" /></span></p>    
+            <p><span><b>Year: </b></span>1982-1993 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('arrested')">
+            <h2>Arrested Development</h2>
+            <img src="./sitcoms/arrested.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 8.7 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2003-2019 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('alexa')">
+            <h2>Alexa & Katie</h2>
+            <img src="./sitcoms/alexa.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 7.3 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2018-2020 </p>
+            
         </div>
-        <div class="sitcom" onclick="openModal('friends')">
-            <h2>1. Friends</h2>
-            <img src="friends.jpg" alt="Friends" width="200px" height="350px">
-            <p>An American sitcom created by David Crane and Marta Kauffman, which aired from September 22, 1994, to May 6, 2004.</p>
+        <div class="sitcom" onclick="openModal('2broke')">
+            <h2>2 Broke Grils</h2>
+            <img src="./sitcoms/2broke.jpg" alt="Friends" width="200px" height="300px">
+            <p><span><b>Rating: </b></span> 6.7 <span><img src="./star.svg" alt="" height="15" /></span></p>
+            <p><span><b>Year: </b></span>2011-2017 </p>
+            
         </div>
         
         
@@ -213,5 +138,8 @@
             </div>
         </div>
     </main>
+
+    <script src="tvsitcom.js">
+    </script>
 </body>
 </html>
