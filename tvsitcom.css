@@ -48,12 +48,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: black;
     /* Set background color */
 }
 
 header {
     background-color: #ff6f61;
+    
     /* Set header background color */
     color: #fff;
     padding: 20px 0;
@@ -79,7 +80,8 @@ main {
 
 .sitcom {
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #1e1e1e;
+    color: white;
     /* Set sitcom tile background color */
     padding: 20px;
     border-radius: 5px;
