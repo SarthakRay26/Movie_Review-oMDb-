@@ -53,10 +53,10 @@ body {
 }
 
 header {
-    background-color: #ff6f61;
+    background-color: #ffa500;
     
     /* Set header background color */
-    color: #fff;
+    color: #1e1e1e;
     padding: 20px 0;
     display: flex;
     align-items: center;
