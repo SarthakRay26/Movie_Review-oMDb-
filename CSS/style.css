@@ -37,15 +37,15 @@ body {
 }
 
 .navbar {
-    background-color: #ff6f61;
+    background-color: #e2b616;
 }
 
 .navbar-toggler {
-    background-color: #ff6f61;
+    background-color: #e2b616;
 }
 
 .navbar-collapse {
-    background-color: #ff6f61;
+    background-color: #e2b616;
 }
 .navbar-brand {
     display: flex;
@@ -118,7 +118,7 @@ button[type="submit"] {
     justify-content: center;
 }
 .bg-body-tertiary {
-    background-color: #ff445c !important;
+    background-color: #e2b616 !important;
 }
 table a {
     color: white;
