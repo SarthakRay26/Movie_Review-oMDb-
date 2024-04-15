@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -63,16 +61,12 @@
                         <input type="text" class="form-control" placeholder="Search Movies or Shows..." id="movie-search-box"
                             onkeyup="findMovies()" onclick="findMovies()" style="width:500px;">
                         <div class="search-list" id="search-list"></div>
-                    </div>
-
-                    
+                    </div>        
                 </div>
 
             </div>
         </div>
     </nav>
-
-
 
     <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen">
@@ -125,7 +119,7 @@
                                 <ul>
                                     <li><a href="about.html">About us</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="tvshow.html">TV shows(our favs)</a></li>
+                                    <li><a href="tvshow.html">TV shows</a></li>
                                     <li><a href="register.html">Login</a></li>
                                 </ul>
                             </td>
@@ -137,14 +131,12 @@
     </div>
     </div>
 
-    <div class="container">
+    
         <div class="result-container">
             <div class="result-grid" id="result-grid">
-
             </div>
         </div>
     </div>
-
     <h1>Academy Awards from Scratch</h1>
 
 
@@ -288,7 +280,7 @@
                 var f = y + "-" + m + "-" + d;
 
                 const apiKey = "df1dcb436b034d1a9c2f9081fe7f7968";
-                const query = "Hollywood news";
+                const query = "Hollywood news ";
                 const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=${f}&sortBy=publishedAt&apiKey=${apiKey}`;
 
 
@@ -297,7 +289,7 @@
                         const response = await fetch(apiUrl);
                         const data = await response.json();
 
-                        return data.articles.slice(0, 10); // Limit to 10 articles
+                        return data.articles.slice(0, 10); 
                     } catch (error) {
                         console.error(
                             "Error fetching movie news data:",
@@ -379,7 +371,7 @@
 
     <div class="genre">
         <h2>Genre</h2>
-        <select name="genre" id="genre" onchange="handleGenreChange(this.value)">
+        <select class="genre-list" name="genre" id="genre" onchange="handleGenreChange(this.value)">
             <option value="">--Select genre--</option>
             <option value="action">Action</option>
             <option value="comedy">Comedy</option>
@@ -390,6 +382,10 @@
             <option value="sci-fi">Sci-Fi</option>
         </select>
         <div id="result"></div>
+        <div  id="movie-details-container" class="movie-details-container">
+            <div  class="result-grid2" id="result-grid2"></div>
+        </div>
+        
     </div>
 
     <div class="TVShow" id="TVShow">
@@ -410,8 +406,6 @@
     <script src="./JS/script.js"></script>
     <script src="./JS/slideshow.js"></script>
     <script src="./JS/genre.js"></script>
-    
-
 </body>
 
 </html>
